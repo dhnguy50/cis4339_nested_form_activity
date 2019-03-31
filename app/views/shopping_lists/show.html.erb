@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>List name:</strong>
+  <%= @shopping_list.list_name %>
+
+  <ol class="foods">
+    <% @shopping_list.foods.each do |food| %>
+    <li>
+      <%= food.food_name %>
+    </li>
+    <% end %>
+  </ol>
+</p>
+
+<%= link_to 'Edit', edit_shopping_list_path(@shopping_list) %> |
+<%= link_to 'Back', shopping_lists_path %>

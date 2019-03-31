@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cis4339NestedFormActivity</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div id="header">
+    <h1>CIS 4339 Nested Form Activity</h1>
+    <h1>Simple Shopping List Management</h1>
+    <%= link_to "Shopping List", shopping_lists_path %>
+    <%= link_to "Food", foods_path %>
+
+  </div>
+    <%= yield %>
+  </body>
+</html>
